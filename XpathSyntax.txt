@@ -1,0 +1,12 @@
+Xpaths
+
+1.Absolute : full xpath starting from root to element
+2.Relative : it serchers for the element 
+
+ex:
+//*[@id="nav-xshop"]/a[2]
+
+
+Syntax : //tagName[@attribute='value']
+
+//tagName[text()='value']
