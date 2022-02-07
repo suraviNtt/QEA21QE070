@@ -7,6 +7,39 @@ ex:
 //*[@id="nav-xshop"]/a[2]
 
 
-Syntax : //tagName[@attribute='value']
+Xpath Syntax : //tagName[@attribute='value']
 
 //tagName[text()='value']
+
+//tagName[contains(text(),'value')]
+
+//tagName[conatins(@id,'value')]
+
+//tagName[contains(@attribut, 'value')]
+
+Locators :
+1. ID
+2.class
+3.link text
+4. name
+5. partial link text
+6. tag name
+7. css selector
+8. xpath
+
+
+CSS Syntax:
+
+.class
+
+.pclass.child_class
+
+#id
+
+parenttag > childtag
+
+tag[attribute='value']
+
+
+
+
