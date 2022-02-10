@@ -1,0 +1,25 @@
+<!doctype html>
+<head>
+</head>
+<body>
+<script>
+function loginValidationCheck(){
+ var user = document.getElementById("user").value;
+ var pas = document.getElementById("paswd").value;
+	if(user == null || user == ""){
+		alert("Enter the user name");	
+	}
+	if(pas == null || pas == ""){
+		alert("Enter the password");	
+	}
+}
+
+ </script> 
+<form>
+ Username : <input type="text" name="username" id="user"/><br>
+ Password : <input type="password" name="password" id="paswd"/>
+
+<input type="submit" onclick="loginValidationCheck()"/>
+</form>
+</body>
+</html>
