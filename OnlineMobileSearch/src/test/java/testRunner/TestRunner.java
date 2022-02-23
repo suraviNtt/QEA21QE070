@@ -7,6 +7,7 @@ import utilities.AlertHandler;
 import utilities.CommonMethods;
 import utilities.PropertiesReader;
 import utilities.WebBrowserHelper;
+import webPages.pageElements;
 
 public class TestRunner {
 
@@ -18,6 +19,7 @@ public class TestRunner {
 		
 		AlertHandler alertHandler = new AlertHandler(driver);
 		CommonMethods commonMethods = new CommonMethods(driver);
+		pageElements homePage = new pageElements(driver);
 		
 		String url = prop.getApplicationUrl();
 		commonMethods.launchApplication(url);
@@ -28,6 +30,7 @@ public class TestRunner {
 		 * .
 		 * .
 		 */
+		homePage.enterTextInSearchBox("mobile smartphones under 30000");
 		
 		commonMethods.closeBrowser();
 		
