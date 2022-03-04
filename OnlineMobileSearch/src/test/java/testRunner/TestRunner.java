@@ -23,14 +23,18 @@ public class TestRunner {
 		
 		String url = prop.getApplicationUrl();
 		commonMethods.launchApplication(url);
-		
-		/*
-		 * Test Steps
-		 * .
-		 * .
-		 * .
-		 */
-		homePage.enterTextInSearchBox("mobile smartphones under 30000");
+//		
+//		/*
+//		 * Test Steps
+//		 * .
+//		 * .
+//		 * .
+//		 */
+//		homePage.enterUserIDandPassword("userID", "passwordValue");
+//		homePage.enterTextInSearchBox("mobile smartphones under 30000");
+		homePage.moveToCollages();
+		homePage.closeAdd();
+	//	commonMethods.takeFullScreenShot("E:\\screenshot.png");
 		
 		commonMethods.closeBrowser();
 		
