@@ -30,6 +30,7 @@ public class AutoPopulatedSearch {
 		wait.pollingEvery(Duration.ofMillis(10));
 		
 		wait.ignoring(NoSuchElementException.class);
+	
 		
 		//Fluent Wait
 		Wait<WebDriver> waitF = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofMinutes(10)).ignoring(NoSuchElementException.class);
