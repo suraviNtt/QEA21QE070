@@ -1,4 +1,4 @@
-package utilities;
+package readers;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -10,13 +10,14 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+
 public class ExcelReader {
 
 	static int row;
 	static int column;
 
 	// excel reader
-	public static String[][] dataExcelReader(String sheetName) throws IOException {
+	public static Object[][] dataExcelReader(String sheetName) throws IOException {
 
 		String basePath = System.getProperty("user.dir");
 		FileInputStream fis = null;
@@ -34,7 +35,7 @@ public class ExcelReader {
 		row = rowCount + 1;
 		int columnCount = sheet.getRow(0).getLastCellNum();
 		column = columnCount;
-		String[][] tesData = new String[rowCount + 1][columnCount];
+		Object[][] tesData = new String[rowCount + 1][columnCount];
 //		System.out.println(rowCount);
 //		System.out.println(columnCount);
 
@@ -87,7 +88,7 @@ public class ExcelReader {
 	}
 
 	public static void main(String[] args) throws IOException {
-		String[][] testdata = dataExcelReader("validUserCreds");
+		Object[][] testdata = dataExcelReader("validUserCreds");
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < row; j++) {
 				System.out.println(testdata[i][j]);

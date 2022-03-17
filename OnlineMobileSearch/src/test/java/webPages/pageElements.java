@@ -12,12 +12,6 @@ public class pageElements {
 	private WebDriver driver;
 	private CommonMethods methods;
 	
-	public pageElements(WebDriver driver){
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-	}
-	
-	
 	@FindBy(id = "")
 	WebElement searchbox;
 	
@@ -50,6 +44,11 @@ public class pageElements {
 	
 	@FindBy(xpath = "//a[normalize-space()='Colleges']")
 	WebElement collagesOption;
+	
+	public pageElements(WebDriver driver){
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
 	
 	/**
 	 * 

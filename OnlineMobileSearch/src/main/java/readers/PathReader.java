@@ -1,4 +1,4 @@
-package utilities;
+package readers;
 
 public class PathReader {
 
