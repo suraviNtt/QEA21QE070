@@ -1,0 +1,14 @@
+{
+	"address": {
+		"city": "jalandhar",
+		"pin": 123456
+	},
+	"name": "nameValue",
+	"addressarray": [
+		{
+			"city": "jalandhar",
+			"pin": 123456
+		}
+	],
+	"age": 123
+}

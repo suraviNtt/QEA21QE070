@@ -1,0 +1,17 @@
+{
+	"username": "value",
+	"password": "value",
+	"age": 123,
+	"address": {
+		"city": "val",
+		"pin": 123123
+	},
+	"mobno": [
+		{
+			"home": "1234567890"
+		},
+		{
+			"work": "1326549870"
+		}
+	]
+}
